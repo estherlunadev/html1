@@ -1,0 +1,91 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Currículo Web Inteligente</title>
+
+   
+    <link rel="stylesheet" href="css/stylee.css">
+</head>
+
+<body>
+
+    <h1>Currículo Web Inteligente</h1>
+
+   
+    <form id="formCadastro">
+
+        <h2>Editar Perfil</h2>
+
+        <label for="nome">Nome</label>
+        <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite seu nome"
+            required
+        >
+
+        <label for="cargo">Cargo desejado</label>
+        <input
+            type="text"
+            id="cargo"
+            name="cargo"
+            placeholder="Digite seu cargo desejado"
+            required
+        >
+
+        <label for="resumo">Resumo profissional</label>
+        <textarea
+            id="resumo"
+            name="resumo"
+            placeholder="Digite seu resumo profissional"
+            required
+        ></textarea>
+
+        <button type="submit">
+            Salvar Perfil
+        </button>
+
+        <button type="button" id="btnLimpar">
+            Limpar Perfil
+        </button>
+
+        <button type="button" id="btnTema">
+            Alternar Tema
+        </button>
+
+    </form>
+
+    <!-- Visualização do currículo -->
+    <section id="visualizacao">
+
+        <h2>Visualização do Currículo</h2>
+
+        <h3 id="nomePreview">Seu Nome</h3>
+
+        <h4 id="cargoPreview">Cargo Desejado</h4>
+
+        <p id="resumoPreview">
+            Seu resumo profissional aparecerá aqui.
+        </p>
+
+        <hr>
+
+        <small>
+            Última visita registrada:
+            <span id="ultimaVisita"></span>
+        </small>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

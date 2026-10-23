@@ -1,0 +1,129 @@
+
+{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f5f7;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+form,
+section {
+    max-width: 740px;
+    margin: 0 auto 15px;
+    padding: 22px;
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+h1 {
+    max-width: 740px;
+    margin: 0 auto 12px;
+    color: #2457b8;
+    font-size: 28px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 21px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px 5px 0 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #1557d5;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #1045ad;
+}
+
+#nomePreview {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+#cargoPreview {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+#resumoPreview {
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+body.modo-noturno {
+    background-color: #111827;
+    color: #f3f4f6;
+}
+
+body.modo-noturno form,
+body.modo-noturno section {
+    background-color: #1f2937;
+    color: #f3f4f6;
+    border-color: #374151;
+}
+
+body.modo-noturno input,
+body.modo-noturno textarea {
+    background-color: #374151;
+    color: #fff;
+    border-color: #4b5563;
+}
+
+body.modo-noturno input::placeholder,
+body.modo-noturno textarea::placeholder {
+    color: #d1d5db;
+}
+
+body.modo-noturno h1 {
+    color: #60a5fa;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    form,
+    section {
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        margin-bottom: 5px;
+    }
+}
